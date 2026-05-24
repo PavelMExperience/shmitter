@@ -24,9 +24,7 @@ function App() {
 
     return (
         <div className={'app'}>
-            {/* Передаем функцию в навигацию (верхний правый аватар) */}
             <Navigation user={user} changeAvatar={changeAvatar}/>
-            {/* Передаем функцию в боди (левый аватар в сайдбаре) */}
             <Body user={user} stats={stats} changeAvatar={changeAvatar}/>
         </div>
     )

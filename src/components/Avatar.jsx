@@ -1,8 +1,7 @@
 const Avatar = ({size, user, changeAvatar}) => {
 
     const handleClick = () => {
-        const newUrl = prompt('Введите URL нового аватара:');
-        // Проверяем, что юзер не нажал "Отмена" и не оставил строку пустой
+        const newUrl = prompt('Enter the URL of the new avatar:');
         if (newUrl && newUrl.trim() !== '') {
             changeAvatar(newUrl.trim());
         }
@@ -14,7 +13,7 @@ const Avatar = ({size, user, changeAvatar}) => {
             src={user.avatar}
             alt={user.name}
             onClick={handleClick}
-            style={{ cursor: 'pointer' }} // Чтобы при наведении был "пальчик"
+            style={{ cursor: 'pointer' }}
         />
     )
 }
